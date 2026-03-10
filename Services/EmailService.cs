@@ -1,6 +1,7 @@
 using System.Net;
 using System.Net.Mail;
 using TaskScheduler.Configuration;
+using TaskScheduler.Services.Interface;
 
 namespace TaskScheduler.Services;
 

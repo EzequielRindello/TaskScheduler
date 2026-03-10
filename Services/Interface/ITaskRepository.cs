@@ -1,6 +1,6 @@
 using TaskScheduler.Models;
 
-namespace TaskScheduler.Services;
+namespace TaskScheduler.Services.Interface;
 
 public interface ITaskRepository
 {

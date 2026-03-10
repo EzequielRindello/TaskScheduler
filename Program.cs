@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using TaskScheduler.Configuration;
 using TaskScheduler.Managers;
 using TaskScheduler.Services;
+using TaskScheduler.Services.Interface;
 using TaskScheduler.UI;
 
 DotEnv.Load(new DotEnvOptions(probeForEnv: true));
@@ -23,7 +24,7 @@ var services = new ServiceCollection();
 services.AddSingleton(smtpSettings);
 services.AddSingleton<IEmailService, EmailService>();
 services.AddSingleton<ITaskRepository>(new JsonTaskRepository("tasks.json"));
-services.AddSingleton(new CsvExporter("tasks_export.csv"));
+services.AddSingleton(new CsvExporter(@"C:\Users\your user \Downloads\tasks_export.csv")); // add here where you want your file
 services.AddSingleton<TaskManager>();
 services.AddSingleton<ConsoleMenu>();
 

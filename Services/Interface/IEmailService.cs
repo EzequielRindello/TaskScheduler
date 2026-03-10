@@ -1,4 +1,4 @@
-namespace TaskScheduler.Services;
+namespace TaskScheduler.Services.Interface;
 
 public interface IEmailService
 {
