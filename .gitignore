@@ -22,7 +22,6 @@ Thumbs.db
 
 # Environment variables
 .env
-.env.*
 
 # NuGet
 *.nupkg
